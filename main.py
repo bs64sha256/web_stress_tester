@@ -43,8 +43,8 @@ def make_request(url):
 
 # Пример использования
 url = "https://vision.maximumtest.ru/meeting/meetingId/34248#2801796" #Замените на нужный URL
-num_requests = 0  # Количество запросов
-num_threads = 0  # Количество потоков
+num_requests = 1 # Количество запросов
+num_threads = 1 # Количество потоков
 
 stress_test(url, num_requests, num_threads)
 if __name__ == '__main__':

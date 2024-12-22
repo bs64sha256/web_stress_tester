@@ -80,9 +80,8 @@ if __name__ == '__main__':
     lbl_1.place(x=10, y=180)
     lbl_2 = ttk.Label(root, text='2| - ')
     lbl_2.place(x=10, y=210)
-    btn = ttk.Button(root, text='Начать', cursor='hand2', width=53)
+    btn = ttk.Button(root, text='Начать', cursor='hand2', width=53, command=stress_test)
     btn.place(x=10, y=120)
 
-    stress_test()
 
     root.mainloop()

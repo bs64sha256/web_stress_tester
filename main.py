@@ -28,7 +28,7 @@ def stress_test(url, num_requests, num_threads):
     average_response_time = sum(r['response_time'] for r in results if 'response_time' in r) / len(results) if results else 0
 
 
-    print(f"Завершено {len(results)} запросов за {total_time:.2f} секунд.")
+    lbl_1['text'] = f"1| - Завершено {len(results)} запросов за {total_time:.2f} секунд."
     print(f"Среднее время ответа: {average_response_time:.2f} секунд.")
     print("Результаты:")
     for result in results:
@@ -70,5 +70,10 @@ if __name__ == '__main__':
     threads_lbl.place(x=170, y=95)
     btn = ttk.Button(root, text='Начать', cursor='hand2', width=53)
     btn.place(x=10, y=120)
+    output = ttk.Label(root, text='Выходные данные:').place(x=10, y=150)
+    lbl_1 = ttk.Label(root, text='1| - ')
+    lbl_1.place(x=10, y=180)
+    lbl_2 = ttk.Label(root, text='2| - ')
+    lbl_2.place(x=10, y=210)
 
     root.mainloop()

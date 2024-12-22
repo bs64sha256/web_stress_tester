@@ -1,6 +1,9 @@
+from tkinter import ttk
+
 import requests
 import concurrent.futures
 import time
+import tkinter
 
 def stress_test(url, num_requests, num_threads):
     """
@@ -40,7 +43,22 @@ def make_request(url):
 
 # Пример использования
 url = "https://vision.maximumtest.ru/meeting/meetingId/34248#2801796" #Замените на нужный URL
-num_requests = 5  # Количество запросов
+num_requests = 1  # Количество запросов
 num_threads = 2  # Количество потоков
 
 stress_test(url, num_requests, num_threads)
+if __name__ == '__main__':
+    root = tkinter.Tk()
+
+    ttk.Style().theme_use('xpnative')
+
+    root.title('Stress Tester')
+    root.geometry('400x395+50+50')
+    root.resizable(False, False)
+
+    url_label = ttk.Label(root, text='Введите URL-адрес тестируемого веб-ресурса:')
+    url_label.place(x=10, y=10)
+    url_entry = ttk.Entry(root, width=53)
+    url_entry.place(x=10, y=35)
+
+    root.mainloop()

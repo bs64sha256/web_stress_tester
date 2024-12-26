@@ -48,7 +48,7 @@ if __name__ == '__main__':
     ttk.Style().theme_use('xpnative')
 
     root.title('Stress Tester')
-    root.geometry('400x395+50+50')
+    root.geometry('400x275+50+50')
     root.resizable(False, False)
 
     url_label = ttk.Label(root, text='Введите URL-адрес тестируемого веб-ресурса:')

@@ -83,5 +83,8 @@ if __name__ == '__main__':
     btn = ttk.Button(root, text='Начать', cursor='hand2', width=53, command=stress_test)
     btn.place(x=10, y=120)
 
+    progressbar = ttk.Progressbar(orient="horizontal")
+    progressbar.place(x=10, y=150)
+
 
     root.mainloop()

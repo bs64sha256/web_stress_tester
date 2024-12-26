@@ -84,7 +84,7 @@ if __name__ == '__main__':
     btn.place(x=10, y=120)
 
     progressbar = ttk.Progressbar(orient="horizontal")
-    progressbar.place(x=10, y=150)
+    progressbar.place(x=10, y=240)
 
 
     root.mainloop()

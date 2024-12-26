@@ -8,9 +8,6 @@ import tkinter
 
 if __name__ == '__main__':
     def stress_test():
-        """
-        Простой стресс-тест веб-сайта.  НЕ подходит для серьёзного тестирования.
-        """
         url = url_entry.get()
         num_requests = int(power.get())
         num_threads = int(threads.get())
@@ -46,15 +43,6 @@ if __name__ == '__main__':
         response_time = end_time - start_time
         return response_time, response.status_code
 
-
-
-    # Пример использования
-    url = "https://vision.maximumtest.ru/meeting/meetingId/34248#2801796"  # Замените на нужный URL
-    num_requests = 1  # Количество запросов
-    num_threads = 1  # Количество потоков
-
-
-
     root = tkinter.Tk()
 
     ttk.Style().theme_use('xpnative')
@@ -83,7 +71,7 @@ if __name__ == '__main__':
     btn = ttk.Button(root, text='Начать', cursor='hand2', width=53, command=stress_test)
     btn.place(x=10, y=120)
 
-    progressbar = ttk.Progressbar(orient="horizontal")
+    progressbar = ttk.Progressbar(orient="horizontal", length=380)
     progressbar.place(x=10, y=240)
 
 

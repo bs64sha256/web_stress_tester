@@ -8,6 +8,7 @@ import tkinter
 
 if __name__ == '__main__':
     def stress_test():
+        k=0
         url = url_entry.get()
         num_requests = int(power.get())
         num_threads = int(threads.get())
@@ -21,8 +22,14 @@ if __name__ == '__main__':
                 try:
                     response_time, status_code = future.result()
                     results.append({'url': url, 'response_time': response_time, 'status_code': status_code})
+                    progressbar['value'] = k + 100 / num_requests
+                    k += 100 / num_requests
                 except requests.exceptions.RequestException as e:
                     results.append({'url': url, 'error': str(e)})
+                    print(results)
+                    progressbar['value'] = k + 100 / num_requests
+                    k += 100 / num_requests
+
 
         end_time = time.time()
         total_time = end_time - start_time

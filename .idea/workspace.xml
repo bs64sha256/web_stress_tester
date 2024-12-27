@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a3358a68-07df-4158-8349-3c950d6fd3b9" name="Changes" comment="stress_test_1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +195,31 @@
       <option name="project" value="LOCAL" />
       <updated>1735230963953</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="stress_test_1">
+      <option name="closed" value="true" />
+      <created>1735231588134</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1735231588134</updated>
+    </task>
+    <task id="LOCAL-00016" summary="stress_test_1">
+      <option name="closed" value="true" />
+      <created>1735231717705</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1735231717705</updated>
+    </task>
+    <task id="LOCAL-00017" summary="stress_test_1">
+      <option name="closed" value="true" />
+      <created>1735231776764</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1735231776764</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
